@@ -10,4 +10,11 @@
 FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
 transaction.replace(R.id.linear,firstFragment); // destination, target fragment
 transaction.commit();</code></pre>
+<h2>If you want to move from one fragment to a different activity in that case you have to use intent. </h2>
+<br>Use the following code. <br>
+Intent intent = new Intent(getContext(), MainActivity2.class);<br>
+startActivity(intent);<br>
+//Since we don't know in which activity this fragment can be therefore, instead of <br>
+//using MainActivity.this we use getContext(); <br>
+
 
