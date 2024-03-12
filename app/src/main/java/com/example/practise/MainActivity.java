@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 FirstFragment firstFragment = new FirstFragment();
                 FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-                transaction.replace(R.id.linear,firstFragment);
+                transaction.replace(R.id.linear,firstFragment);//destination,target fragment
                 transaction.commit();
             }
         });
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 SecondFragment secondFragment = new SecondFragment();
                 FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-                transaction.replace(R.id.linear,secondFragment);
+                transaction.replace(R.id.linear,secondFragment); //destination,target fragment
                 transaction.commit();
             }
         });
